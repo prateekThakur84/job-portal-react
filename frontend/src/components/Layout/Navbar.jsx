@@ -31,7 +31,9 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="/careerconnect-white.png" alt="logo" />
+          <Link to="/" onClick={() => setShow(false)}>
+              Global Connect
+            </Link>
         </div>
 
         <ul className={`menu ${show ? "show-menu" : ""}`}>
